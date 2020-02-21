@@ -30,6 +30,7 @@ const ContactForm = () => {
           <label htmlFor="lastName">Last Name*</label>
           <input
             name="lastName"
+            aria-label="lastName"
             placeholder="luo"
             ref={register({ required: true })}
           />
@@ -40,9 +41,10 @@ const ContactForm = () => {
 
         <div>
           <label htmlFor="email" placeholder="bluebill1049@hotmail.com">
-            Email*
+            Email
+            <input name="email" ref={register({ required: true })} />
           </label>
-          <input name="email" ref={register({ required: true })} />
+
           {errors.email && (
             <p>Looks like there was an error: {errors.email.type}</p>
           )}
