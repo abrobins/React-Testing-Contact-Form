@@ -3,15 +3,15 @@ import { render, fireEvent } from "@testing-library/react";
 import ContactForm from "./ContactForm";
 import "mutationobserver-shim";
 
-test("first name last name email and message labels are rendered", () => {
-  //const { getByLabelText } = render(<ContactForm />);
-  //   const messageContains = getByLabelText("Message");
-  //   expect(messageContains).toBeInTheDocument();
-  // getByLabelText(/first/i);
-  // getByLabelText(/lastname/i);
-  //   getByLabelText(/email/i);
-  //   getByLabelText(/message/i);
-});
+// test("first name last name email and message labels are rendered", () => {
+//const { getByLabelText } = render(<ContactForm />);
+//   const messageContains = getByLabelText("Message");
+//   expect(messageContains).toBeInTheDocument();
+// getByLabelText(/first/i);
+// getByLabelText(/lastname/i);
+//   getByLabelText(/email/i);
+//   getByLabelText(/message/i);
+// });
 
 test("renders labels above form", () => {
   const { getByText } = render(<ContactForm />);
